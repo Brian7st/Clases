@@ -58,3 +58,10 @@ console.log(`Número de estudiantes después del segundo registro: ${registro2.c
 const registro3 = new Registro();
 registro3.registrarEstudiante();
 console.log(`Número de estudiantes después del tercer registro: ${registro3.consulta()}`);
+
+//Coche metodo privado
+import Coche from './clases/Carro2.js';
+
+const miCoche= new Coche()
+miCoche.conducir()
+
