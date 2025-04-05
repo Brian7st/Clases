@@ -3,11 +3,10 @@ incremente cada vez que se cree un nuevo objeto Estudiante */
 
 class Escuela{
     static numEstudiante = 0;
-
-    registroNuevoEstudiante(){
-       return Escuela.numEstudiante++
+    constructor(){
+      Escuela.numEstudiante++
     }
-    consultarRegistro(){
+    static consultarRegistro(){
        return console.log(`el numero de estudiantes registrados es de ${Escuela.numEstudiante}`);
         
     }

@@ -3,26 +3,28 @@ un método trabajar(). Implemente encapsulación. */
 
 
 class Empleado {
+    #nombre
+    #salario
     constructor(nombre,salario){
-        this._nombre = nombre;
-        this._salario = salario;
+        this.#nombre = nombre;
+        this.#salario = salario;
     }
     get nombre() {
-        return this._nombre;
+        return this.#nombre;
     }
     set nombre(nuevoNombre){
         if(typeof nuevoNombre === "string"){
-            this._nombre = nuevoNombre;
+            this.#nombre = nuevoNombre;
         }else{
             console.log("el formato no es el correcto");
         }
     }
     get salario(){
-        return this._salario
+        return this.#salario
     }
     set salario(nuevoSalario){
         if(typeof nuevoSalario === "number" && nuevoSalario > 0){
-            this._salario = nuevoSalario;
+            this.#salario = nuevoSalario;
         }else{
             console.log("el numero debe de ser positivo");
             
