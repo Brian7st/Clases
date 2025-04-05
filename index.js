@@ -65,3 +65,19 @@ import Coche from './clases/Carro2.js';
 const miCoche= new Coche()
 miCoche.conducir()
 
+// empleado
+import Empleado from './clases/empleado.js';
+
+const empleado1 = new Empleado ("brian",2000)
+empleado1.trabajar()
+console.log(`mi empleado se llama ${empleado1.nombre} y su salario es de ${empleado1.salario}`)
+empleado1.nombre = "stiven"
+console.log(`mi empleado se llama ${empleado1.nombre} y su salario es de ${empleado1.salario}`)
+
+//empleado y gerente 
+import { Empleado1,Gerente } from './clases/empleadoYGerente.js';
+
+const miEmpleado = new Empleado1("jhovanny",2000)
+miEmpleado.trabajar()
+const miGerente = new Gerente("jhojan", 3000,"cultivo")
+miGerente.trabajar()
