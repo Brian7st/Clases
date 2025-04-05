@@ -1,34 +1,36 @@
 
 class CuentaBancaria {
+    #titular;
+    #saldo;
   constructor(titular, saldoInicial) {
-    this._titular = titular;
-    this._saldo = saldoInicial;
+    this.#titular = titular;
+    this.#saldo = saldoInicial;
   }
 
   depositar(cantidad) {
     if (cantidad > 0) {
-      this._saldo += cantidad;
-      this._mostrarSaldo();
+      this.#saldo += cantidad;
+      this.#mostrarSaldo();
     } else {
       console.log("La cantidad a depositar debe ser positiva.");
     }
   }
 
   retirar(cantidad) {
-    if (cantidad > 0 && cantidad <= this._saldo) {
-      this._saldo -= cantidad;
-      this._mostrarSaldo();
+    if (cantidad > 0 && cantidad <= this.#saldo) {
+      this.#saldo -= cantidad;
+      this.#mostrarSaldo();
     } else {
       console.log("Fondos insuficientes o cantidad inválida.");
     }
   }
 
-  _mostrarSaldo() {
-    console.log(`Saldo actual de ${this._titular}: $${this._saldo}`);
+  #mostrarSaldo() {
+    console.log(`Saldo actual de ${this.#titular}: $${this.#saldo}`);
   }
 
   getTitular() {
-    return this._titular;
+    return this.#titular;
   }
 }
 

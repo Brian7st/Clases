@@ -81,3 +81,20 @@ const miEmpleado = new Empleado1("jhovanny",2000)
 miEmpleado.trabajar()
 const miGerente = new Gerente("jhojan", 3000,"cultivo")
 miGerente.trabajar()
+
+//vehiculo 
+import Vehiculo2 from './clases/vehiculo.js';
+
+const miVehiculo = new Vehiculo2 (2009,"gp")
+console.log(miVehiculo)
+miVehiculo._encenderMotor()
+miVehiculo.arracar()
+
+//registro de nuevo estudiante 
+import Escuela from './clases/nuevoEstudiante.js';
+
+const nuevoEstudiante = new Escuela()
+nuevoEstudiante.registroNuevoEstudiante()
+nuevoEstudiante.registroNuevoEstudiante()
+nuevoEstudiante.registroNuevoEstudiante()
+nuevoEstudiante.consultarRegistro()
