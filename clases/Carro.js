@@ -32,10 +32,15 @@ class Bicicleta extends Vehiculo{
     }
 
     mover(){
-        console.log(`la velocidad maxima de la bicicleta ${this.marca} de color ${this.color} es de ${this.VelocidadMax}km/h`);
+        console.log(`la velocidad maxima de la bicicleta ${this.VelocidadMax}km/h de color ${this.color} y su marca es ${this.marca}`);
     }
 }
 
-export{Vehiculo,Carro,Bicicleta}
 
 
+
+const miCarro = new Carro ("2 Toneladas",200,"BMW Group")
+miCarro.mover()
+
+const miBicicleta = new Bicicleta ("100 kilos",60,"Scott","rojo")
+miBicicleta.mover()
