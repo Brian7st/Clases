@@ -3,15 +3,16 @@ marca, y un método privado encenderMotor() que sea usado en el método
 público arrancar(). */
 
 class  Vehiculo2 {
+    #modelo
     constructor(modelo,marca){
-        this._modelo = modelo;
+        this.#modelo = modelo;
         this.marca = marca
     }
-    _encenderMotor(){
+    #encenderMotor(){
         console.log("motor encendido");
     }
     arracar(){
-        this._encenderMotor()
+        this.#encenderMotor()
         console.log("el carro puede arrancar")
     }
 
